@@ -326,6 +326,70 @@ Wait a minute and retry.
 
 ---
 
+# 🧠 Multiple Models Setup (Optional)
+
+You are NOT limited to one model.
+
+Claude Code can route through multiple OpenRouter models if you want.
+
+Just tell Anti Gravity something like:
+
+> "I want to add multiple models support"
+
+Then:
+- create more OpenRouter API keys if needed
+- pick additional models
+- paste them into Anti Gravity
+- let the agent configure the routing
+
+You can mix:
+- Gemini
+- DeepSeek
+- Nemotron
+- Claude
+- OpenAI
+- Qwen
+- etc.
+
+This lets you build:
+- coding agents
+- planning agents
+- debugging agents
+- frontend agents
+- backend agents
+
+basically your own AI dev team.
+
+---
+
+# 🖥️ Final Verification
+
+Open terminal and run:
+
+```bash
+claude
+```
+
+If you see your selected OpenRouter model inside Claude Code startup:
+
+YOU DID IT.
+
+## Screenshot
+
+<p align="center">
+  <img src="./assets/claude-terminal-working.png" width="80%">
+</p>
+
+Claude Code is now:
+- globally configured
+- routed through OpenRouter
+- working in terminal
+- ready inside any IDE
+
+student budget engineering achieved.
+
+---
+
 # 🧠 Why This Works
 
 Claude Code normally talks directly to Anthropic.
