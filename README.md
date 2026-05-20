@@ -2,7 +2,7 @@
 
 > “Because $200/month sounded like a skill issue.”
 
-Setup Claude Code once using Anti Gravity IDE, then use it globally across Terminal, VSCode, Cursor, Windsurf, or basically anywhere — powered by OpenRouter and cheaper/free AI models.
+Setup Claude Code once using AntiGravity IDE, then use it globally across Terminal, VSCode, Cursor, Windsurf, or basically anywhere — powered by OpenRouter and cheaper/free AI models.
 
 ## TL;DR
 
@@ -13,7 +13,7 @@ Setup Claude Code once using Anti Gravity IDE, then use it globally across Termi
 ## Quick Start
 
 1. Download AntiGravity IDE
-2. Install/open Claude Code
+2. Install the Claude Code extension (or CLI), then open Claude Code
 3. Give AntiGravity the `Prompt.md` instructions
 4. Create an OpenRouter key and pick a model ID
 5. Paste key + model, execute, then restart your IDE/terminal
