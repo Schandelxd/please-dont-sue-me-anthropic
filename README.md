@@ -2,7 +2,32 @@
 
 > “Because $200/month sounded like a skill issue.”
 
-Setup Claude Code once using Anti Gravity IDE, then use it globally across Terminal, VSCode, Cursor, Windsurf, or basically anywhere — powered by OpenRouter and cheaper/free AI models.
+Setup Claude Code once using AntiGravity IDE, then use it globally across Terminal, VSCode, Cursor, Windsurf, or basically anywhere — powered by OpenRouter and cheaper/free AI models.
+
+## TL;DR
+
+- Configure Claude Code to use OpenRouter instead of direct Anthropic routing
+- Pick a free/cheap model and run Claude Code globally in your tools
+- Follow the steps in this README + `Prompt.md`
+
+## Quick Start
+
+1. Download AntiGravity IDE
+2. Install the Claude Code extension (or CLI), then open Claude Code
+3. Give AntiGravity the `Prompt.md` instructions
+4. Create an OpenRouter key and pick a model ID
+5. Paste key + model, execute, then restart your IDE/terminal
+6. Run `claude` and verify it starts with your selected model
+
+## Share This Repo (Copy/Paste)
+
+If this project helps you, share this text:
+
+```txt
+I made Claude Code work with OpenRouter models (including free ones) and use it globally in terminal + IDEs.
+Repo: https://github.com/Schandelxd/please-dont-sue-me-anthropic
+If it helps, drop a ⭐
+```
 ---
 
 # ⚠️ IMPORTANT
