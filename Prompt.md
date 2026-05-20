@@ -1,4 +1,6 @@
-## Background 
+# Prompt (Copy it till the end)
+
+"'## Background 
 Claude Code is Anthropic's official CLI tool for using AI models as a coding assistant directly 
 in the terminal. By default, it connects to Anthropic's API and uses Claude models, which 
 requires a paid Anthropic API subscription. 
@@ -10,18 +12,18 @@ talk to OpenRouter instead of Anthropic directly.
 This setup lets you use Claude Code as your coding assistant while routing the actual AI 
 requests through OpenRouter — giving you access to free models like Gemini 2.5 Pro or 
 DeepSeek V3, or paid models from any provider, all through Claude Code's interface. 
-## What You Need To Do 
+'## What You Need To Do 
 Configure Claude Code's settings file (~/.claude/settings.json) so that it sends API requests 
 to OpenRouter instead of Anthropic. This is done by setting environment variables inside the 
 settings file that override Claude Code's default API connection. 
-## My Details - OpenRouter API Key: [PASTE YOUR KEY HERE — get one free at 
+'## My Details - OpenRouter API Key: [PASTE YOUR KEY HERE — get one free at 
 https://openrouter.ai/keys] - Model: openrouter/free 
-## Step 1: Create the config directory 
+'## Step 1: Create the config directory 
 Run this command: 
 mkdir -p ~/.claude 
 This creates Claude Code's configuration directory if it doesn't already exist. It's safe to run 
 even if the directory already exists. 
-## Step 2: Write the settings file 
+'## Step 2: Write the settings file 
 The file ~/.claude/settings.json controls Claude Code's behavior. It supports an "env" block 
 that sets environment variables for the Claude Code process. We use this to redirect API 
 calls to OpenRouter. 
@@ -50,7 +52,7 @@ does that. Do not remove or change the "model" field.
 If ~/.claude/settings.json already exists and contains other settings (like "permissions", 
 "projects", or "allowedTools"), merge the "env" block and "model" field into the existing file. 
 Preserve all existing settings — only add or update the keys shown above. 
-## Rules You MUST Follow 
+'## Rules You MUST Follow 
 1. ANTHROPIC_BASE_URL must be exactly "https://openrouter.ai/api" — do NOT append 
 /v1 to it. Claude Code automatically appends /v1 when constructing API request URLs. If 
 you write "https://openrouter.ai/api/v1" here, the actual request will go to 
@@ -76,7 +78,7 @@ request. The settings only take effect when Claude Code starts a new session. Te
 the current session will fail because the environment variables aren't loaded yet. 
 7. The JSON file must be syntactically valid — no trailing commas, no comments, proper 
 double-quoting on all keys and string values. 
-## Step 3: Verify the file 
+'## Step 3: Verify the file 
 After writing the file, read back the contents of ~/.claude/settings.json and confirm ALL of the 
 following: - ANTHROPIC_BASE_URL is exactly "https://openrouter.ai/api" (ends with /api, NOT 
 /api/v1) 
@@ -84,7 +86,7 @@ following: - ANTHROPIC_BASE_URL is exactly "https://openrouter.ai/api" (ends wit
 sk-or-) - ANTHROPIC_API_KEY is exactly "" (an empty string — it must be present as a key with an 
 empty string value, not missing, not null) - ANTHROPIC_MODEL contains the exact model ID: openrouter/free - "model": "sonnet[1m]" is present at the top level of the JSON object - The file is valid JSON with no syntax errors 
 If any of these checks fail, fix the file before proceeding. 
-## Common Errors the User May See After Setup - "Model not found" → The ANTHROPIC_MODEL value doesn't match any model on 
+'## Common Errors the User May See After Setup - "Model not found" → The ANTHROPIC_MODEL value doesn't match any model on 
 OpenRouter. Model IDs are case-sensitive and must include the provider prefix. Check the 
 exact ID at openrouter.ai/models. - 429 rate limit errors → Free models have per-minute and per-day usage limits set by 
 OpenRouter. Wait 60 seconds and try again. If it keeps happening, the daily limit may be 
@@ -95,7 +97,7 @@ from the settings file or has a non-empty value. It must be present and set to e
 (empty string). - Settings don't seem to take effect → The user must quit their current terminal entirely and 
 open a brand new terminal window. Then run `claude`. Settings from settings.json are only 
 loaded when Claude Code starts — they cannot be hot-reloaded into an existing session. 
-## Step 4: Tell the user it's done 
+'## Step 4: Tell the user it's done 
 Tell me: 
 1. Setup is complete — Claude Code is now configured to use OpenRouter 
 2. I need to QUIT my current terminal completely and open a brand new terminal window 
@@ -104,4 +106,4 @@ Tell me:
 4. I should see my chosen model name in the Claude Code startup output, confirming it's 
 connected through OpenRouter 
 5. If I want to switch models later, I just change the ANTHROPIC_MODEL value in 
-~/.claude/settings.json and open a new terminal session 
+~/.claude/settings.json and open a new terminal session"
