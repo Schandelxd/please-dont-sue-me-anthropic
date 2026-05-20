@@ -1,4 +1,4 @@
-# Prompt (Copy it till the end)
+# (Copy the below Prompt till the end)
 
 "'## Background 
 Claude Code is Anthropic's official CLI tool for using AI models as a coding assistant directly 
